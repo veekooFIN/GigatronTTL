@@ -1,5 +1,5 @@
 # GigatronTTL
-Config files for my GitHub profile.
+Hobby code development for Gigatron TTL microcomputer
 
 
 ---------------------------------------------------------------------------------------------------------------
