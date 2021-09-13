@@ -33,7 +33,7 @@ int mandelbrot(float x, float y) {
   a = 0;
   b = 0;  
   i = 0;
-  while (i < 63)
+  while (i < 15)
   {
     a2 = a * a;
     b2 = b * b;
@@ -47,7 +47,7 @@ int mandelbrot(float x, float y) {
   }
   if(x+y < 4) return i;
 
-  return 0;
+  return 15;
 }
 
 void drawPixel(int x, int y, int color)
@@ -57,16 +57,32 @@ void drawPixel(int x, int y, int color)
 
 void main(void) {
   int x, y, data;
-  int offset = 0;
+  int col[16];
   float sx, sy;
+  
+  col[0] = &h01;
+  col[1] = &h02;
+  col[2] = &h03;
+  col[3] = &h07;
+  col[4] = &h0b;
+  col[5] = &h0f;
+  col[6] = &h0e;
+  col[7] = &h0d;
+  col[8] = &h0c;
+  col[9] = &h3c;
+  col[10] = &h38;
+  col[11] = &h34;
+  col[12] = &h30;
+  col[13] = &h20;
+  col[14] = &h10;
+  col[15] = &h00;
    
   for(y = 0; y < HEIGHT; y = y + YSTEP ) {
     for(x = 0; x < WIDTH; x = x + XSTEP ) {
-      sx = -0.7 + SCALE * (WIDTH/2.0 - x) / (WIDTH/2.0);
+      sx = (-0.7 + SCALE * (WIDTH/2.0 - x) / (WIDTH/2.0))*(-1.0);
       sy = SCALE * (HEIGHT/2.0 - y) / (HEIGHT/2.0);
       data = mandelbrot(sx, sy);
-      offset = ( x + y * WIDTH);
-      drawPixel(x,y,data);
+      drawPixel(x,y,col[data]);
     }
   }
 }
