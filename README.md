@@ -13,6 +13,7 @@ ascii julia fractal set for Gigatron TTL
 C language code developed for Gigatron TTL microcomputer. 
 Executable .GT1 files added.
 
+
 gfx mandelbrot uses floating point and takes 4,5 hours to draw the screen.
 
 gfx julia uses floating point and takes 3 hours to draw the screen.
