@@ -60,22 +60,22 @@ void main(void) {
   int col[16];
   float sx, sy;
   
-  col[0] = &h01;
-  col[1] = &h02;
-  col[2] = &h03;
-  col[3] = &h07;
-  col[4] = &h0b;
-  col[5] = &h0f;
-  col[6] = &h0e;
-  col[7] = &h0d;
-  col[8] = &h0c;
-  col[9] = &h3c;
-  col[10] = &h38;
-  col[11] = &h34;
-  col[12] = &h30;
-  col[13] = &h20;
-  col[14] = &h10;
-  col[15] = &h00;
+  col[0] = 0x01;
+  col[1] = 0x02;
+  col[2] = 0x03;
+  col[3] = 0x07;
+  col[4] = 0x0b;
+  col[5] = 0x0f;
+  col[6] = 0x0e;
+  col[7] = 0x0d;
+  col[8] = 0x0c;
+  col[9] = 0x3c;
+  col[10] = 0x38;
+  col[11] = 0x34;
+  col[12] = 0x30;
+  col[13] = 0x20;
+  col[14] = 0x10;
+  col[15] = 0x00;
    
   for(y = 0; y < HEIGHT; y = y + YSTEP ) {
     for(x = 0; x < WIDTH; x = x + XSTEP ) {
