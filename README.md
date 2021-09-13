@@ -8,7 +8,6 @@ gfx mandelbrot fractal set for Gigatron TTL
 gfx julia fractal set for Gigatron TTL
 
 ascii mandelbrot fractal set for Gigatron TTL
-IMG_0918.jpg
 
 ascii julia fractal set for Gigatron TTL
 
