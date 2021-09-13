@@ -4,6 +4,7 @@ Hobby code development for Gigatron TTL microcomputer
 
 ---------------------------------------------------------------------------------------------------------------
 gfx mandelbrot fractal set for Gigatron TTL
+https://github.com/veekooFIN/GigatronTTL/blob/75499c337ccd7d48061dc6462edd20c84583fc8b/IMG_0918.jpg
 
 gfx julia fractal set for Gigatron TTL
 
