@@ -17,7 +17,7 @@
 
 #define HEIGHT 120
 #define WIDTH 160
-#define SCALE 1.4
+#define SCALE 1.6
 #define YSTEP 1
 #define XSTEP 1
 
@@ -80,7 +80,7 @@ void main(void) {
   for(y = 0; y < HEIGHT; y = y + YSTEP ) {
     for(x = 0; x < WIDTH; x = x + XSTEP ) {
       sx = -0.7 + (SCALE * (WIDTH/2.0 - x) / (WIDTH/2.0))*(-1);
-      sy = (SCALE * (HEIGHT/2.0 - y) / (HEIGHT/2.0))*(-1);
+      sy = (SCALE * (WIDTH/HEIGHT) * (HEIGHT/2.0 - y) / (HEIGHT/2.0))*(-1);
       data = mandelbrot(sx, sy);
       drawPixel(x,y,col[data]);
     }
