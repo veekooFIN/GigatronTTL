@@ -62,22 +62,22 @@ void main(void) {
   int col[16];
   float sx, sy;
   
-  // maybe julia should have blueish colorset?
-  col[0] = 0x01;
-  col[1] = 0x02;
-  col[2] = 0x03;
-  col[3] = 0x07;
-  col[4] = 0x0b;
-  col[5] = 0x0f;
-  col[6] = 0x0e;
+  // maybe julia should have blueish colorset? Yes. Lets try inversed palette
+  col[14] = 0x01;
+  col[13] = 0x02;
+  col[12] = 0x03;
+  col[11] = 0x07;
+  col[10] = 0x0b;
+  col[9] = 0x0f;
+  col[8] = 0x0e;
   col[7] = 0x0d;
-  col[8] = 0x0c;
-  col[9] = 0x3c;
-  col[10] = 0x38;
-  col[11] = 0x34;
-  col[12] = 0x30;
-  col[13] = 0x20;
-  col[14] = 0x10;
+  col[6] = 0x0c;
+  col[5] = 0x3c;
+  col[4] = 0x38;
+  col[3] = 0x34;
+  col[2] = 0x30;
+  col[1] = 0x20;
+  col[0] = 0x10;
   col[15] = 0x00;
  
   for(y = 0; y < HEIGHT; y = y + YSTEP ) {
