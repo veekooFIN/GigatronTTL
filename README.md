@@ -17,6 +17,7 @@ ascii julia fractal set for Gigatron TTL
 ---------------------------------------------------------------------------------------------------------------
 C language code developed for Gigatron TTL microcomputer. 
 Executable .GT1 files added.
+Runtime pictures added.
 
 ---------------------------------------------------------------------------------------------------------------
 
