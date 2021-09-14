@@ -58,8 +58,8 @@ void main(void) {
    
   for(y = 0; y < HEIGHT; y = y + YSTEP ) {
     for(x = 0; x < WIDTH; x = x + XSTEP ) {
-      sx = (-0.7 + SCALE * (WIDTH/2.0 - x) / (WIDTH/2.0))*(-1.0);
-      sy = SCALE * (HEIGHT/2.0 - y) / (HEIGHT/2.0);
+      sx = -0.7 + (SCALE * (WIDTH/2.0 - x) / (WIDTH/2.0))*(-1);
+      sy = (SCALE * (HEIGHT/2.0 - y) / (HEIGHT/2.0))*(-1);
       data = mandelbrot(sx, sy);
       offset = ( x + y * WIDTH);
     }
