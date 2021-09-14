@@ -15,7 +15,7 @@
 
 #define HEIGHT 15
 #define WIDTH 26
-#define SCALE 1.4
+#define SCALE 1.6
 #define YSTEP 1
 #define XSTEP 1
 
