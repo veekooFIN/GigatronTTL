@@ -26,7 +26,7 @@ Here is update #3 files!
 ---------------------------------------------------------------------------------------------------------------
 gfx mandelbrot uses floating point and takes 4,5 hours to draw the screen.
 
-gfx julia uses floating point and takes 2 hours to draw the screen.
+gfx julia uses floating point and takes 1 hour 50 minutes to draw the screen.
 
 ascii mandelbrot uses floating point and takes 3 minutes to draw the screen.
 
