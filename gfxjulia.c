@@ -82,7 +82,7 @@ void main(void) {
   for(y = 0; y < HEIGHT; y = y + YSTEP ) {
     for(x = 0; x < WIDTH; x = x + XSTEP ) {
       sx = (SCALE * (WIDTH/2.0 - x) / (WIDTH/2.0))*(-1);
-      sy = (SCALE * (WIDTH/HEIGHT) * (HEIGHT/2.0 - y) / (HEIGHT/2.0))*(-1);
+      sy = (SCALE * (HEIGHT/2.0 - y) / (HEIGHT/2.0))*(-1)/(WIDTH/HEIGHT);
       data = julia(sx, sy);
       drawPixel(x,y,col[data]);
     }
