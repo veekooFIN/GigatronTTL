@@ -38,16 +38,14 @@ int mandelbrot(float x, float y) {
     a2 = a * a;
     b2 = b * b;
     zz = a2 + b2;
-    if(zz > 32) break;
+    if(zz > 4) break;
     
     atemp = a2 - b2 + x;
     b = 2.0 * a * b + y;
     a = atemp;
     i++;
   }
-  if(x+y < 4) return i;
-
-  return 15;
+  return i;
 }
 
 void drawPixel(int x, int y, int color)

@@ -32,30 +32,25 @@ int julia(float x, float y) {
   
   a = x;
   b = y;  
-  i = 47;
+  i = 48;
   while (i < 58)
   {
     a2 = a * a;
     b2 = b * b;
     zz = a2 + b2;
-    if(zz > 32) break;
+    if(zz > 4) break;
     
     atemp = a2 - b2 + CX;
     b = 2.0 * a * b + CY;
     a = atemp;
     i++;
   }
-  if(x+y < 4) { 
-    putchar(i);
-    return 0;
-  }
-  putchar(' ');
-  return 1;
+  putchar(i);
+  return 0;
 }
 
 void main(void) {
   int x, y, data;
-  int offset = 0;
   float sx, sy;
    
   for(y = 0; y < HEIGHT; y = y + YSTEP ) {
@@ -63,7 +58,6 @@ void main(void) {
       sx = (SCALE * (WIDTH/2.0 - x) / (WIDTH/2.0))*(-1);
       sy = (SCALE * (HEIGHT/2.0 - y) / (HEIGHT/2.0))*(-0.75);
       data = julia(sx, sy);
-      offset = ( x + y * WIDTH);
     }
   }
 }
