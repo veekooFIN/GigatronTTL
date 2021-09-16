@@ -26,6 +26,8 @@ Here is update #4 files!
 
 
 ---------------------------------------------------------------------------------------------------------------
+std versions take this time, but x / extended versions take double that time!
+
 gfx mandelbrot uses floating point and takes 2 hours 5 minutes to draw the screen.
 
 gfx julia uses floating point and takes 1 hour 50 minutes to draw the screen.
