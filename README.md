@@ -7,6 +7,8 @@ gfx mandelbrot fractal set for Gigatron TTL
 
 gfx julia fractal set for Gigatron TTL
 
+std versions use 16 iterations and nice color palette. x / extended versions use 64 iterations and pseudeo color palette.
+
 ascii mandelbrot fractal set for Gigatron TTL
 
 ascii julia fractal set for Gigatron TTL
