@@ -1,6 +1,6 @@
 /*----------------------------------------------------------------------+
  |                                                                      |
- |      gfxjulia.c -- demonstrate fractal in gfx / quick and dirty      |
+ |      gfxjuliax.c -- demonstrate fractal in gfx / quick and dirty     |
  |                                                                      |
  +----------------------------------------------------------------------*/
  
