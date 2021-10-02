@@ -12,6 +12,7 @@
 #include <assert.h>
 #include <string.h>
 #include <math.h>
+#include <gigatron/console.h>
 
 #define HEIGHT 15
 #define WIDTH 26
@@ -43,8 +44,7 @@ int mandelbrot(float x, float y) {
     a = atemp;
     i++;
   }
-  putchar(i);
-  return 0;
+  return i;
 }
 
 void main(void) {
@@ -56,6 +56,10 @@ void main(void) {
       sx = -0.7 + (SCALE * (WIDTH/2.0 - x) / (WIDTH/2.0))*(-1);
       sy = (SCALE * (HEIGHT/2.0 - y) / (HEIGHT/2.0))*(-0.75);
       data = mandelbrot(sx, sy);
+      console_state.cx = x;
+      console_state.cy = y;
+      console_state.fgbg = (((data-48)*6+1) & 0x3f) << 8;
+      console_print((char*)&data, 1);
     }
   }
 }
