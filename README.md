@@ -1,4 +1,4 @@
-# GigatronTTL
+# GigatronTTL-Fractals
 Hobby code development for Gigatron TTL microcomputer - Fractals
 
 
