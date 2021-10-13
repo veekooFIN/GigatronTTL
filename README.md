@@ -50,7 +50,7 @@ bison-3.8.tar.gz
 
 make-4.3.tar.gz
 
-Python-3.8.0.tgz
+Python-3.8.12.tar.xz
 
 How to compile:
 
