@@ -50,6 +50,8 @@ bison-3.8.tar.gz
 
 make-4.3.tar.gz
 
+Python-3.8.0.tgz
+
 How to compile:
 
 cd gigatron-lcc/
