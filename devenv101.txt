@@ -42,6 +42,10 @@ cd gigatron-lcc
 make
 make test
 ---------------------------
+git clone https://github.com/kervinck/gigatron-rom
+cd gigatron-rom
+make dev.rom
+---------------------------
 Common build lines:
 ---------------------------
 cd gigatron-lcc
