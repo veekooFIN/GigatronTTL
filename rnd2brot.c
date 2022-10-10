@@ -1,6 +1,6 @@
 /*----------------------------------------------------------------------+
  |                                                                      |
- |     gfxbrot.c -- demonstrate fractal in gfx / quick and dirty        |
+ |     rnd2brot.c -- demonstrate fractal in gfx / quick and dirty        |
  |                                                                      |
  +----------------------------------------------------------------------*/
  
