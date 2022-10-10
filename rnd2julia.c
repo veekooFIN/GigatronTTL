@@ -78,8 +78,8 @@ void main(void) {
   col[15] = 0x00;
  
   for(n = 0; n < 30000; n = n + 1 ) {
-    y = rand() % 120;
-    x = rand() % 160;
+    y = rand() % HEIGHT;
+    x = rand() % WIDTH;
     
     sx = (SCALE * (WIDTH/2.0 - x) / (WIDTH/2.0))*(-1);
     sy = (SCALE * (HEIGHT/2.0 - y) / (HEIGHT/2.0))*(-0.75);
