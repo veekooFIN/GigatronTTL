@@ -16,6 +16,7 @@
 #include <gigatron/sys.h>
 
 #define HEIGHT 120
+#define LIMHEIGHT 96
 #define WIDTH 160
 #define SCALE 1.7
 #define YSTEP 1
@@ -58,7 +59,7 @@ void drawPixel(int x, int y, int color)
 void main(void) {
   int x, y, data, n;
   int col[16];
-  int sm[HEIGHT][WIDTH];
+  int sm[LIMHEIGHT][WIDTH];
   float sx, sy;
  
   col[14] = 0x01;
@@ -78,8 +79,8 @@ void main(void) {
   col[0] = 0x10;
   col[15] = 0x00;
  
-  for(n = 0; n < 19201; n = n + 1 ) {
-    y = rand() % HEIGHT;
+  for(n = 0; n < 30000; n = n + 1 ) {
+    y = rand() % LIMHEIGHT;
     x = rand() % WIDTH;
     
     if(sm[y][x] == 555) n--;
