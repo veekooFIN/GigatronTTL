@@ -1,6 +1,6 @@
 /*----------------------------------------------------------------------+
  |                                                                      |
- |      rndjulia.c -- demonstrate fractal in gfx / quick and dirty      |
+ |      rnd4julia.c -- demonstrate fractal in gfx / quick and dirty      |
  |                                                                      |
  +----------------------------------------------------------------------*/
  
