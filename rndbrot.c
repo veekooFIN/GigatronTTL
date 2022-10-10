@@ -80,14 +80,14 @@ void main(void) {
     y = rand() % HEIGHT;
     x = rand() % WIDTH;
     
-    if(sm[y][x] == 1) n--;
+    if(sm[y][x] == 555) n--;
     
-    if(sm[y][x] == 0) {    
+    if(sm[y][x] != 555) {    
       sx = -0.7 + (SCALE * (WIDTH/2.0 - x) / (WIDTH/2.0))*(-1);
       sy = (SCALE * (HEIGHT/2.0 - y) / (HEIGHT/2.0))*(-0.75);
       data = mandelbrot(sx, sy);
       drawPixel(x,y,col[data]);
-      sm[y][x] = 1;
+      sm[y][x] = 555;
     }
   }
 }
