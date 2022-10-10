@@ -58,7 +58,7 @@ void drawPixel(int x, int y, int color)
 void main(void) {
   int x, y, data, n;
   int col[16];
-  int sm[120][160];
+  int sm[HEIGHT][WIDTH];
   float sx, sy;
  
   col[14] = 0x01;
@@ -79,8 +79,8 @@ void main(void) {
   col[15] = 0x00;
  
   for(n = 0; n < 19201; n = n + 1 ) {
-    y = rand() % 120;
-    x = rand() % 160;
+    y = rand() % HEIGHT;
+    x = rand() % WIDTH;
     
     if(sm[y][x] == 1) n--;
     
