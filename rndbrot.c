@@ -16,11 +16,12 @@
 #include <gigatron/sys.h>
 
 #define HEIGHT 120
-#define LIMHEIGHT 96
 #define WIDTH 160
 #define SCALE 1.6
 #define YSTEP 1
 #define XSTEP 1
+
+static unsigned char sm[HEIGHT][WIDTH]; 
 
 int mandelbrot(float x, float y) {
  float zz;
@@ -57,8 +58,7 @@ void drawPixel(int x, int y, int color)
 void main(void) {
   int x, y, data, n;
   int col[16];
-  int sm[LIMHEIGHT][WIDTH];
-  float sx, sy;
+  float sx, sy;  
   
   col[0] = 0x01;
   col[1] = 0x02;
@@ -85,17 +85,17 @@ void main(void) {
   } 
     
   for(n = 0; n < 30000; n = n + 1 ) {
-    y = rand() % LIMHEIGHT;
+    y = rand() % HEIGHT;
     x = rand() % WIDTH;
     
-    if(sm[y][x] == 555) n--;
+    if(sm[y][x] == 'y') n--;
     
-    if(sm[y][x] != 555) {    
+    if(sm[y][x] != 'y') {    
       sx = -0.7 + (SCALE * (WIDTH/2.0 - x) / (WIDTH/2.0))*(-1);
       sy = (SCALE * (HEIGHT/2.0 - y) / (HEIGHT/2.0))*(-0.75);
       data = mandelbrot(sx, sy);
       drawPixel(x,y,col[data]);
-      sm[y][x] = 555;
+      sm[y][x] = 'y';
     }
   }
 }
