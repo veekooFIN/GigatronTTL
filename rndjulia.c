@@ -78,6 +78,12 @@ void main(void) {
   col[1] = 0x20;
   col[0] = 0x10;
   col[15] = 0x00;
+
+  for(y = 0; y < HEIGHT; y = y + YSTEP ) {
+    for(x = 0; x < WIDTH; x = x + XSTEP ) {
+      drawPixel(x,y,col[15]);
+    }
+  } 
  
   for(n = 0; n < 30000; n = n + 1 ) {
     y = rand() % LIMHEIGHT;
