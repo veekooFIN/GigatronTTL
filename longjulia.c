@@ -1,6 +1,6 @@
 /*----------------------------------------------------------------------+
  |                                                                      |
- |     longbrot.c -- demonstrate fractal in gfx / quick and dirty        |
+ |     longjulia.c -- demonstrate fractal in gfx / quick and dirty        |
  |                                                                      |
  +----------------------------------------------------------------------*/
  
@@ -20,11 +20,15 @@
 #define NORM_BITS 13
 #define F 8192
 
-int mandelbrot(long real0, long imag0) {
+int julia(long real0, long imag0) {
   long realq, imagq; 
   long real, imag;
   int i;
-
+  long cx, cy; 
+ 
+  cx = (long) ((-0.8) * (float) F);
+  cy = (long) ((0.156) * (float) F);
+  
   real = real0;
   imag = imag0;
   for (i = 0; i < 15; i++)
@@ -34,8 +38,8 @@ int mandelbrot(long real0, long imag0) {
 
     if ((realq + imagq) > 32768) break;
 
-    imag = ((real * imag) >> (NORM_BITS - 1)) + imag0;
-    real = realq - imagq + real0;
+    imag = ((real * imag) >> (NORM_BITS - 1)) + cy;
+    real = realq - imagq + cx;
   }
   return i;
 }
@@ -51,25 +55,25 @@ void main(void) {
   long realmin, imagmin, realmax, imagmax;
   long deltareal, deltaimag, real0, imag0;  
   
-  col[0] = 0x01;
-  col[1] = 0x02;
-  col[2] = 0x03;
-  col[3] = 0x07;
-  col[4] = 0x0b;
-  col[5] = 0x0f;
-  col[6] = 0x0e;
+  col[14] = 0x01;
+  col[13] = 0x02;
+  col[12] = 0x03;
+  col[11] = 0x07;
+  col[10] = 0x0b;
+  col[9] = 0x0f;
+  col[8] = 0x0e;
   col[7] = 0x0d;
-  col[8] = 0x0c;
-  col[9] = 0x3c;
-  col[10] = 0x38;
-  col[11] = 0x34;
-  col[12] = 0x30;
-  col[13] = 0x20;
-  col[14] = 0x10;
+  col[6] = 0x0c;
+  col[5] = 0x3c;
+  col[4] = 0x38;
+  col[3] = 0x34;
+  col[2] = 0x30;
+  col[1] = 0x20;
+  col[0] = 0x10;
   col[15] = 0x00;
   
   realmin = (long) ((-2.0) * (float) F);
-  realmax = (long) ((0.7) * (float) F);
+  realmax = (long) ((2.0) * (float) F);
   imagmin = (long) ((-1.2) * (float) F);
   imagmax = (long) ((1.2) * (float) F); 
    
@@ -86,7 +90,7 @@ void main(void) {
   for(x = 0; x < WIDTH; x++ ) {
     imag0 = imagmax;
     for(y = 0; y < HEIGHT; y++ ) {
-      data = mandelbrot(real0, imag0);
+      data = julia(real0, imag0);
       drawPixel(x,y,col[data]);
       imag0 -= deltaimag;
     }

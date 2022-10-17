@@ -15,8 +15,8 @@
 #include <gigatron/console.h>
 #include <gigatron/sys.h>
 
-#define WIDTH 160
-#define HEIGHT 120
+#define WIDTH 40
+#define HEIGHT 30
 #define NORM_BITS 12
 #define F 4096
 
