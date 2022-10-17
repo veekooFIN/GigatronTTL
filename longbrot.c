@@ -1,6 +1,6 @@
 /*----------------------------------------------------------------------+
  |                                                                      |
- |     longbrot.c -- demonstrate fractal in gfx / quick and dirty        |
+ |     longbrot.c -- demonstrate fractal in gfx / quick and dirty       |
  |                                                                      |
  +----------------------------------------------------------------------*/
  
@@ -15,8 +15,8 @@
 #include <gigatron/console.h>
 #include <gigatron/sys.h>
 
-#define WIDTH 40
-#define HEIGHT 30
+#define WIDTH 160
+#define HEIGHT 120
 #define NORM_BITS 13
 #define F 8192
 
