@@ -69,8 +69,8 @@ void main(void) {
   col[15] = 0x00;
   
   realmin = (long) ((-2.1) * (float) F);
-  realmax = (long) ((1.2) * (float) F);
-  imagmin = (long) ((-1.8) * (float) F);
+  realmax = (long) ((1.3) * (float) F);
+  imagmin = (long) ((-1.9) * (float) F);
   imagmax = (long) ((0.7) * (float) F); 
    
   for(y = 0; y < HEIGHT; y++ ) {
@@ -84,11 +84,11 @@ void main(void) {
 
   real0 = realmin; 
   for(x = 0; x < WIDTH; x++ ) {
-    imag0 = imagmax;
+    imag0 = imagmin;
     for(y = 0; y < HEIGHT; y++ ) {
       data = burnship(real0, imag0);
       drawPixel(x,y,col[data]);
-      imag0 -= deltaimag;
+      imag0 += deltaimag;
     }
     real0 += deltareal;
   }
