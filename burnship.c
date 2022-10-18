@@ -70,7 +70,7 @@ void main(void) {
   
   realmin = (long) ((-2.1) * (float) F);
   realmax = (long) ((1.2) * (float) F);
-  imagmin = (long) ((-1.7) * (float) F);
+  imagmin = (long) ((-1.8) * (float) F);
   imagmax = (long) ((0.7) * (float) F); 
    
   for(y = 0; y < HEIGHT; y++ ) {
