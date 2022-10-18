@@ -3,9 +3,9 @@ Hobby code development for Gigatron TTL microcomputer - Fractals
 
 
 ---------------------------------------------------------------------------------------------------------------
-Long mandelbrot fractal set for Gigatron TTL
+Long Mandelbrot fractal set for Gigatron TTL
 
-Long julia fractal set for Gigatron TTL
+Long Julia fractal set for Gigatron TTL
 
 Long Burning Ship fractal set for Gigatron TTL
 
@@ -22,9 +22,9 @@ Runtime pictures added.
 
 ---------------------------------------------------------------------------------------------------------------
 
-Long mandelbrot uses long integer and takes 45 minutes to draw the screen.
+Long Mandelbrot uses long integer and takes 45 minutes to draw the screen.
 
-Long julia uses long integer and takes 35 minutes to draw the screen.
+Long Julia uses long integer and takes 35 minutes to draw the screen.
 
 Long Burning Ship uses long integer and takes 40 minutes to draw the screen
 
