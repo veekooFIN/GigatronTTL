@@ -1,6 +1,6 @@
 /*----------------------------------------------------------------------+
  |                                                                      |
- |     burnshipX.c -- demonstrate fractal in gfx / quick and dirty       |
+ |     burnshipX.c -- demonstrate fractal in gfx / quick and dirty      |
  |                                                                      |
  +----------------------------------------------------------------------*/
  
