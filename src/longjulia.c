@@ -55,6 +55,8 @@ void main(void) {
   long realmin, imagmin, realmax, imagmax;
   long deltareal, deltaimag, real0, imag0;  
   
+  SYS_SetMode(3);
+  
   col[14] = 0x01;
   col[13] = 0x02;
   col[12] = 0x03;
@@ -96,4 +98,5 @@ void main(void) {
     }
     real0 += deltareal;
   }
+  SYS_SetMode(0);
 }
