@@ -13,6 +13,7 @@
 #include <string.h>
 #include <math.h>
 #include <gigatron/console.h>
+#include <gigatron/sys.h>
 
 #define HEIGHT 15
 #define WIDTH 26
