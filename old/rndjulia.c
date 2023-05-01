@@ -61,6 +61,8 @@ void main(void) {
   int x, y, data, n;
   int col[16];
   float sx, sy;
+  
+  SYS_SetMode(3);
  
   col[14] = 0x01;
   col[13] = 0x02;
@@ -99,4 +101,5 @@ void main(void) {
       sm[y][x] = 'y';
     }
   }
+  SYS_SetMode(0);
 }

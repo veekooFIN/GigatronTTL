@@ -59,6 +59,8 @@ void main(void) {
   int x, y, data;
   int col[16];
   float sx, sy;
+  
+  SYS_SetMode(3);
  
   col[14] = 0x01;
   col[13] = 0x02;
@@ -77,6 +79,12 @@ void main(void) {
   col[0] = 0x10;
   col[15] = 0x00;
  
+  for(y = 0; y < HEIGHT; y++ ) {
+    for(x = 0; x < WIDTH; x++ ) {
+      drawPixel(x,y,col[15]);
+    }
+  } 
+ 
   for(y = 0; y < HEIGHT; y = y + YSTEP ) {
     for(x = 0; x < WIDTH; x = x + XSTEP ) {
       sx = (SCALE * (WIDTH/2.0 - x) / (WIDTH/2.0))*(-1);
@@ -85,4 +93,5 @@ void main(void) {
       drawPixel(x,y,col[data]);
     }
   }
+  SYS_SetMode(0);
 }

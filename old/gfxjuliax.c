@@ -59,6 +59,14 @@ void main(void) {
   int x, y, data;
   int col;
   float sx, sy;
+  
+  SYS_SetMode(3);
+  
+  for(y = 0; y < HEIGHT; y++ ) {
+    for(x = 0; x < WIDTH; x++ ) {
+      drawPixel(x,y,0);
+    }
+  } 
  
   for(y = 0; y < HEIGHT; y = y + YSTEP ) {
     for(x = 0; x < WIDTH; x = x + XSTEP ) {
@@ -69,4 +77,5 @@ void main(void) {
       drawPixel(x,y,col);
     }
   }
+  SYS_SetMode(0);
 }
