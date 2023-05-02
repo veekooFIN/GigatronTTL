@@ -13,8 +13,7 @@ Long Burning Ship fractal set for Gigatron TTL
 
 
 ---------------------------------------------------------------------------------------------------------------
-C language code developed for Gigatron TTL microcomputer. 
-Executable .GT1 files added.
+C language code developed for Gigatron TTL microcomputer.
 Runtime pictures added.
 
 ---------------------------------------------------------------------------------------------------------------
