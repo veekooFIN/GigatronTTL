@@ -1,5 +1,5 @@
 # GigatronTTL-Fractals
-Hobby code development for Gigatron TTL microcomputer - Fractals
+Hobby code development for Gigatron TTL in C language - Fractals
 
 
 ---------------------------------------------------------------------------------------------------------------
