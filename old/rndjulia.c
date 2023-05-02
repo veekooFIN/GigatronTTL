@@ -87,7 +87,7 @@ void main(void) {
     }
   } 
  
-  for(n = 0; n < 30000; n = n + 1 ) {
+  for(n = 0; n < 19201; n = n + 1 ) {
     y = rand() % HEIGHT;
     x = rand() % WIDTH;
     
