@@ -74,6 +74,6 @@ void main(void) {
       col = 63 - data;
       drawPixel(x,y,col);
     }
-    SYS_SetMode(0);
   }
+  SYS_SetMode(0);
 }
