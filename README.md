@@ -32,4 +32,8 @@ Long Burning Ship zoomed uses long integer and takes 1 hour to draw the screen
 ---------------------------------------------------------------------------------------------------------------
 Some tips in devenv101.txt
 
+src=long integer fractals
+
+old=floating point fractals
+
 
