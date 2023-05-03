@@ -69,7 +69,7 @@ void main(void) {
   int x, y, data;
   float sx, sy;
   
-  SYS_SetMode(3);
+  //SYS_SetMode(3);
    
   for(y = 0; y < HEIGHT; y = y + YSTEP ) {
     for(x = 0; x < WIDTH; x = x + XSTEP ) {
@@ -82,5 +82,5 @@ void main(void) {
       console_print((char*)&data, 1);
     }
   }
-  SYS_SetMode(0);
+  //SYS_SetMode(0);
 }
