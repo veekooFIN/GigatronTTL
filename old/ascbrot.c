@@ -30,7 +30,6 @@
 #include <string.h>
 #include <math.h>
 #include <gigatron/console.h>
-#include <gigatron/sys.h>
 
 #define HEIGHT 15
 #define WIDTH 26
@@ -68,8 +67,6 @@ int mandelbrot(float x, float y) {
 void main(void) {
   int x, y, data;
   float sx, sy;
-  
-  //SYS_SetMode(3);
    
   for(y = 0; y < HEIGHT; y = y + YSTEP ) {
     for(x = 0; x < WIDTH; x = x + XSTEP ) {
@@ -82,5 +79,5 @@ void main(void) {
       console_print((char*)&data, 1);
     }
   }
-  //SYS_SetMode(0);
 }
+
