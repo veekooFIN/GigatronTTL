@@ -29,7 +29,6 @@
 #include <assert.h>
 #include <string.h>
 #include <math.h>
-#include <gigatron/console.h>
 #include <gigatron/sys.h>
 
 #define WIDTH 160
