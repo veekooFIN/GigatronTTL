@@ -84,6 +84,10 @@ int longfract(long real0, long imag0, int parr) {
     imag = ((real * imag) >> (NORM_BITS - 1)) + cy;
     real = realq - imagq + cx;
     break;
+    default:    
+    //longbrot
+    imag = ((real * imag) >> (NORM_BITS - 1)) + imag0;
+    real = realq - imagq + real0; 
     }  
   }
   return i;
@@ -187,6 +191,24 @@ void main(void) {
   col[0] = 0x10;
   col[15] = 0x00;   
   break;
+  default:    
+  //longbrot
+  col[0] = 0x01;
+  col[1] = 0x02;
+  col[2] = 0x03;
+  col[3] = 0x07;
+  col[4] = 0x0b;
+  col[5] = 0x0f;
+  col[6] = 0x0e;
+  col[7] = 0x0d;
+  col[8] = 0x0c;
+  col[9] = 0x3c;
+  col[10] = 0x38;
+  col[11] = 0x34;
+  col[12] = 0x30;
+  col[13] = 0x20;
+  col[14] = 0x10;
+  col[15] = 0x00;   
   } 
 
   switch(par){    
@@ -218,6 +240,12 @@ void main(void) {
   imagmin = (long) ((-1.2) * (float) F);
   imagmax = (long) ((1.2) * (float) F);    
   break;
+  default:    
+  //longbrot
+  realmin = (long) ((-2.0) * (float) F);
+  realmax = (long) ((0.7) * (float) F);
+  imagmin = (long) ((-1.2) * (float) F);
+  imagmax = (long) ((1.2) * (float) F);    
   }     
      
   for(y = 0; y < HEIGHT; y++ ) {
@@ -249,6 +277,9 @@ void main(void) {
     //longbrot+julia
     imag0 = imagmax;  
     break;
+    default:    
+    //longbrot+julia
+    imag0 = imagmax;  
     }     
     
     for(y = 0; y < HEIGHT; y++ ) {
@@ -272,6 +303,9 @@ void main(void) {
       //longbrot+julia
       imag0 -= deltaimag; 
       break;
+      default:    
+      //longbrot+julia
+      imag0 -= deltaimag;
       }   
       
     }
