@@ -101,12 +101,12 @@ void main(void) {
   long realmin, imagmin, realmax, imagmax;
   long deltareal, deltaimag, real0, imag0;  
  
-  cprintf("Long integer Fractal:\n");
+  cprintf("Long Integer Fractals:\n");
   cprintf("#1 Burning Ship\n"); 
   cprintf("#2 Burning Ship Zoomed\n"); 
   cprintf("#3 Mandelbrot\n"); 
   cprintf("#4 Julia\n"); 
-  par=readint("\nChoose fractal #1-4:");
+  par=readint("\nChoose Fractal #1-4:");
   
   SYS_SetMode(3);
  
