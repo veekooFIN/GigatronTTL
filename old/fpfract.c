@@ -177,7 +177,7 @@ void main(void) {
       case 3:    
       //burnship
       sx = -0.4 + (BSSCALE * (WIDTH/2.0 - x) / (WIDTH/2.0))*(-1);
-      sy = (BSSCALE * (HEIGHT/2.0 - y) / (HEIGHT/2.0))*(-0.75);
+      sy = -0.3 + (BSSCALE * (HEIGHT/2.0 - y) / (HEIGHT/2.0))*(-0.75);
       data = burnship(sx, sy, IT);
       break;      
       default:
