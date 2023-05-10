@@ -31,8 +31,6 @@
 #include <gigatron/sys.h>
 #include <gigatron/console.h>
 
-#define WIDTH 160
-#define HEIGHT 120
 #define NORM_BITS 13
 #define F 8192
 
@@ -103,14 +101,19 @@ void main(void) {
   int x, y, data;
   int col[16];
   long realmin, imagmin, realmax, imagmax;
-  long deltareal, deltaimag, real0, imag0;  
+  long deltareal, deltaimag, real0, imag0;
+  int WIDTH; //26 //160
+  int HEIGHT; //15 //120
+    
  
   cprintf("Long Integer Fractals:\n");
   cprintf("#1 Burning Ship\n"); 
   cprintf("#2 Burning Ship Zoomed\n"); 
   cprintf("#3 Mandelbrot\n"); 
-  cprintf("#4 Julia\n"); 
-  par=readint("\nChoose Fractal #1-4:");
+  cprintf("#4 Julia\n\n"); 
+  par=readint("Choose Fractal #1-4:");
+  WIDTH=readint("Screen Size X #26-160:");
+  HEIGHT=readint("Screen Size Y #15-120:");
   
   SYS_SetMode(3);
  
