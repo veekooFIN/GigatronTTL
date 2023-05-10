@@ -115,7 +115,7 @@ void main(void) {
   
   cprintf("Floating Point Fractals:\n");
   cprintf("#1 Mandelbrot\n"); 
-  cprintf("#2 Julia\n"); 
+  cprintf("#2 Julia\n\n"); 
   par=readint("Choose Fractal #1-2:");
   WIDTH=readint("Screen Size X #26-160:");
   HEIGHT=readint("Screen Size Y #15-120:");
