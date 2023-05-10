@@ -31,8 +31,6 @@
 #include <gigatron/console.h>
 #include <stdarg.h>
 
-#define WIDTH 26 //160
-#define HEIGHT 15 //120
 #define BSCALE 1.6 //brot
 #define JSCALE 1.7 //julia
 #define YSTEP 1
@@ -48,7 +46,7 @@ int readint(const char *prompt)
   return atoi(buffer);
 }
   
-int mandelbrot(float x, float y) {
+int mandelbrot(float x, float y, int ITE) {
  float zz;
  float a;
  float b;
@@ -60,7 +58,7 @@ int mandelbrot(float x, float y) {
   a = 0;
   b = 0;  
   i = 0;
-  while (i < 63)
+  while (i < ITE)
   {
     a2 = a * a;
     b2 = b * b;
@@ -75,7 +73,7 @@ int mandelbrot(float x, float y) {
   return i;
 }
 
-int julia(float x, float y) {
+int julia(float x, float y, int ITE) {
  float zz;
  float a;
  float b;
@@ -87,7 +85,7 @@ int julia(float x, float y) {
   a = x;
   b = y;  
   i = 0;
-  while (i < 63)
+  while (i < ITE)
   {
     a2 = a * a;
     b2 = b * b;
@@ -111,12 +109,17 @@ void main(void) {
   int x, y, data;
   int col;
   float sx, sy;
-  int par;
+  int par, IT;
+  int WIDTH; //26 //160
+  int HEIGHT; //15 //120
   
   cprintf("Floating Point Fractals:\n");
   cprintf("#1 Mandelbrot\n"); 
   cprintf("#2 Julia\n"); 
-  par=readint("\nChoose Fractal #1-2:");
+  par=readint("Choose Fractal #1-2:");
+  WIDTH=readint("Screen Size X #26-160:");
+  HEIGHT=readint("Screen Size Y #15-120:");
+  IT=readint("Iteration Count #2-63:");
   
   SYS_SetMode(3);
   
@@ -134,22 +137,22 @@ void main(void) {
       //brot
       sx = -0.7 + (BSCALE * (WIDTH/2.0 - x) / (WIDTH/2.0))*(-1);
       sy = (BSCALE * (HEIGHT/2.0 - y) / (HEIGHT/2.0))*(-0.75);
-      data = mandelbrot(sx, sy);
+      data = mandelbrot(sx, sy, IT);
       break;    
       case 2:    
       //julia
       sx = (JSCALE * (WIDTH/2.0 - x) / (WIDTH/2.0))*(-1);
       sy = (JSCALE * (HEIGHT/2.0 - y) / (HEIGHT/2.0))*(-0.75);
-      data = julia(sx, sy);
+      data = julia(sx, sy, IT);
       break;    
       default:
       //brot    
       sx = -0.7 + (BSCALE * (WIDTH/2.0 - x) / (WIDTH/2.0))*(-1);
       sy = (BSCALE * (HEIGHT/2.0 - y) / (HEIGHT/2.0))*(-0.75);
-      data = mandelbrot(sx, sy);
+      data = mandelbrot(sx, sy, IT);
       }   
             
-      col = 63 - data;
+      col = IT - data;
       drawPixel(x,y,col);
     }
   }
