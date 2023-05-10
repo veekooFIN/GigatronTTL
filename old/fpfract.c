@@ -33,6 +33,7 @@
 
 #define BSCALE 1.6 //brot
 #define JSCALE 1.7 //julia
+#define BSSCALE 2.1 //burnship
 #define YSTEP 1
 #define XSTEP 1
 #define CX -0.8
@@ -100,6 +101,33 @@ int julia(float x, float y, int ITE) {
   return i;
 }
 
+int burnship(float x, float y, int ITE) {
+ float zz;
+ float a;
+ float b;
+ float a2;
+ float b2;
+ float atemp;
+ int i;
+  
+  a = 0;
+  b = 0;  
+  i = 0;
+  while (i < ITE)
+  {
+    a2 = a * a;
+    b2 = b * b;
+    zz = a2 + b2;
+    if(zz > 4) break;
+    
+    atemp = a2 - b2 + x;
+    b = abs(2.0 * a * b) + y;
+    a = atemp;
+    i++;
+  }
+  return i;
+}
+
 void drawPixel(int x, int y, int color)
 {
   screenMemory[y][x] = color;
@@ -115,8 +143,9 @@ void main(void) {
   
   cprintf("Floating Point Fractals:\n");
   cprintf("#1 Mandelbrot\n"); 
-  cprintf("#2 Julia\n\n"); 
-  par=readint("Choose Fractal #1-2:");
+  cprintf("#2 Julia\n");
+  cprintf("#3 Burning Ship\n\n");  
+  par=readint("Choose Fractal #1-3:");
   WIDTH=readint("Screen Size X #26-160:");
   HEIGHT=readint("Screen Size Y #15-120:");
   IT=readint("Iteration Count #2-63:");
@@ -144,7 +173,13 @@ void main(void) {
       sx = (JSCALE * (WIDTH/2.0 - x) / (WIDTH/2.0))*(-1);
       sy = (JSCALE * (HEIGHT/2.0 - y) / (HEIGHT/2.0))*(-0.75);
       data = julia(sx, sy, IT);
-      break;    
+      break;
+      case 3:    
+      //burnship
+      sx = -0.4 + (BSSCALE * (WIDTH/2.0 - x) / (WIDTH/2.0))*(-1);
+      sy = (BSSCALE * (HEIGHT/2.0 - y) / (HEIGHT/2.0))*(-0.75);
+      data = burnship(sx, sy, IT);
+      break;      
       default:
       //brot    
       sx = -0.7 + (BSCALE * (WIDTH/2.0 - x) / (WIDTH/2.0))*(-1);
