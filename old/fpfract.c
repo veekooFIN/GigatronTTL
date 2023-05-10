@@ -23,7 +23,6 @@
  
 #include <limits.h>
 #include <stdarg.h>
-#include <stdio.h>
 #include <stdlib.h>
 #include <assert.h>
 #include <string.h>
@@ -32,8 +31,8 @@
 #include <gigatron/console.h>
 #include <stdarg.h>
 
-#define WIDTH 160
-#define HEIGHT 120
+#define WIDTH 26 //160
+#define HEIGHT 15 //120
 #define BSCALE 1.6 //brot
 #define JSCALE 1.7 //julia
 #define YSTEP 1
@@ -143,7 +142,8 @@ void main(void) {
       sy = (JSCALE * (HEIGHT/2.0 - y) / (HEIGHT/2.0))*(-0.75);
       data = julia(sx, sy);
       break;    
-      default:    
+      default:
+      //brot    
       sx = -0.7 + (BSCALE * (WIDTH/2.0 - x) / (WIDTH/2.0))*(-1);
       sy = (BSCALE * (HEIGHT/2.0 - y) / (HEIGHT/2.0))*(-0.75);
       data = mandelbrot(sx, sy);
