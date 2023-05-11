@@ -147,14 +147,14 @@ void main(void) {
  
   switch(par){       
   case 1:    
-  //longbrot
+  //mandelbrot
   realmin = -2.0f;
   realmax = 0.7f;
   imagmin = -1.2f;
   imagmax = 1.2f;    
   break;
   case 2:    
-  //longjulia
+  //julia
   realmin = -2.0f;
   realmax = 2.0f;
   imagmin = -1.2f;
@@ -175,7 +175,7 @@ void main(void) {
   imagmax = 0.01f;    
   break; 
   default:    
-  //longbrot
+  //mandelbrot
   realmin = -2.0f;
   realmax = 0.7f;
   imagmin = -1.2f;
