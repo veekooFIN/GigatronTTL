@@ -157,39 +157,60 @@ void main(void) {
       drawPixel(x,y,0);
     }
   } 
-    
+
+  switch(par){    
+  case 1:       
   for(y = 0; y < HEIGHT; y = y + YSTEP ) {
     for(x = 0; x < WIDTH; x = x + XSTEP ) {
-      
-      switch(par){    
-      case 1:    
       //brot
       sx = -0.7 + (BSCALE * (WIDTH/2.0 - x) / (WIDTH/2.0))*(-1);
       sy = (BSCALE * (HEIGHT/2.0 - y) / (HEIGHT/2.0))*(-0.75);
       data = mandelbrot(sx, sy, IT);
-      break;    
-      case 2:    
-      //julia
-      sx = (JSCALE * (WIDTH/2.0 - x) / (WIDTH/2.0))*(-1);
-      sy = (JSCALE * (HEIGHT/2.0 - y) / (HEIGHT/2.0))*(-0.75);
-      data = julia(sx, sy, IT);
-      break;
-      case 3:    
-      //burnship
-      sx = -0.4 + (BSSCALE * (WIDTH/2.0 - x) / (WIDTH/2.0))*(-1);
-      sy = -0.3 + (BSSCALE * (HEIGHT/2.0 - y) / (HEIGHT/2.0))*(-0.75);
-      data = burnship(sx, sy, IT);
-      break;      
-      default:
-      //brot    
-      sx = -0.7 + (BSCALE * (WIDTH/2.0 - x) / (WIDTH/2.0))*(-1);
-      sy = (BSCALE * (HEIGHT/2.0 - y) / (HEIGHT/2.0))*(-0.75);
-      data = mandelbrot(sx, sy, IT);
-      }   
             
       col = IT - data;
       drawPixel(x,y,col);
     }
   }
+  break;
+  case 2: 
+    for(y = 0; y < HEIGHT; y = y + YSTEP ) {
+    for(x = 0; x < WIDTH; x = x + XSTEP ) {   
+      //julia
+      sx = (JSCALE * (WIDTH/2.0 - x) / (WIDTH/2.0))*(-1);
+      sy = (JSCALE * (HEIGHT/2.0 - y) / (HEIGHT/2.0))*(-0.75);
+      data = julia(sx, sy, IT);
+            
+      col = IT - data;
+      drawPixel(x,y,col);
+    }
+  }
+  break;
+  case 3: 
+  for(y = 0; y < HEIGHT; y = y + YSTEP ) {
+    for(x = 0; x < WIDTH; x = x + XSTEP ) {  
+      //burnship
+      sx = -0.4 + (BSSCALE * (WIDTH/2.0 - x) / (WIDTH/2.0))*(-1);
+      sy = -0.3 + (BSSCALE * (HEIGHT/2.0 - y) / (HEIGHT/2.0))*(-0.75);
+      data = burnship(sx, sy, IT); 
+            
+      col = IT - data;
+      drawPixel(x,y,col);
+    }
+  }
+  break;
+  default:       
+  for(y = 0; y < HEIGHT; y = y + YSTEP ) {
+    for(x = 0; x < WIDTH; x = x + XSTEP ) {
+      //brot
+      sx = -0.7 + (BSCALE * (WIDTH/2.0 - x) / (WIDTH/2.0))*(-1);
+      sy = (BSCALE * (HEIGHT/2.0 - y) / (HEIGHT/2.0))*(-0.75);
+      data = mandelbrot(sx, sy, IT);
+            
+      col = IT - data;
+      drawPixel(x,y,col);
+    }
+  }
+  }
+  
   SYS_SetMode(0);
 }
