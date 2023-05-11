@@ -21,15 +21,11 @@
  |                                                                      |
  +----------------------------------------------------------------------*/
  
-#include <limits.h>
-#include <stdarg.h>
 #include <stdlib.h>
-#include <assert.h>
 #include <string.h>
 #include <math.h>
 #include <gigatron/sys.h>
 #include <gigatron/console.h>
-#include <stdarg.h>
 
 #define CX -0.8
 #define CY 0.156
