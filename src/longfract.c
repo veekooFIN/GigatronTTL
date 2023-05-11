@@ -131,7 +131,7 @@ void main(void) {
  
   switch(par){       
   case 1:    
-  //longbrot
+  //mandelbrot
   col[0] = 0x01;
   col[1] = 0x02;
   col[2] = 0x03;
@@ -228,14 +228,14 @@ void main(void) {
 
   switch(par){       
   case 1:    
-  //longbrot
+  //mandelbrot
   realmin = (long) ((-2.0) * (float) F);
   realmax = (long) ((0.7) * (float) F);
   imagmin = (long) ((-1.2) * (float) F);
   imagmax = (long) ((1.2) * (float) F);    
   break;
   case 2:    
-  //longjulia
+  //julia
   realmin = (long) ((-2.0) * (float) F);
   realmax = (long) ((2.0) * (float) F);
   imagmin = (long) ((-1.2) * (float) F);
@@ -256,7 +256,7 @@ void main(void) {
   imagmax = (long) ((0.01) * (float) F);    
   break; 
   default:    
-  //longbrot
+  //mandelbrot
   realmin = (long) ((-2.0) * (float) F);
   realmax = (long) ((0.7) * (float) F);
   imagmin = (long) ((-1.2) * (float) F);
