@@ -124,7 +124,7 @@ void main(void) {
   cprintf("#3 Burning Ship\n"); 
   //cprintf("#4 Burning Ship Zoomed\n\n");  
   par=readint("Choose Fractal #1-3:");
-  WIDTH=readint("Screen Size X #26-80:");
+  WIDTH=readint("Screen Size X #20-80:");
   HEIGHT=readint("Screen Size Y #15-60:");
   
   SYS_SetMode(3);
@@ -232,7 +232,7 @@ void main(void) {
   realmin = (int) ((-2.0) * (float) F);
   realmax = (int) ((0.7) * (float) F);
   imagmin = (int) ((-1.2) * (float) F);
-  imagmax = (int) ((1.2) * (float) F);    
+  imagmax = (int) ((1.2) * (float) F);     
   break;
   case 2:    
   //julia
