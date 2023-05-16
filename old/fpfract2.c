@@ -139,7 +139,7 @@ void main(void) {
   cprintf("#3 Burning Ship\n"); 
   cprintf("#4 Burning Ship Zoomed\n\n");  
   par=readint("Choose Fractal #1-4:");
-  WIDTH=readint("Screen Size X #26-160:");
+  WIDTH=readint("Screen Size X #20-160:");
   HEIGHT=readint("Screen Size Y #15-120:");
   IT=readint("Iteration Count #2-63:");
   
