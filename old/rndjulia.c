@@ -30,6 +30,7 @@
 #include <string.h>
 #include <math.h>
 #include <gigatron/sys.h>
+#include <time.h>
 
 #define HEIGHT 120
 #define WIDTH 160
@@ -77,6 +78,8 @@ void main(void) {
   int x, y, data, n;
   int col[16];
   float sx, sy;
+
+  srand(time(0));
   
   SYS_SetMode(3);
  
