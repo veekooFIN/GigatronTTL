@@ -11,14 +11,6 @@ old=floating point fractals
 
 ---------------------------------------------------------------------------------------------------------------
 
-Long Mandelbrot fractal set for Gigatron TTL
-
-Long Julia fractal set for Gigatron TTL
-
-Long Burning Ship fractal set for Gigatron TTL
-
----------------------------------------------------------------------------------------------------------------
-
 
 ---------------------------------------------------------------------------------------------------------------
 C language code developed for Gigatron TTL microcomputer.
