@@ -37,8 +37,6 @@
 #define CX -0.8
 #define CY 0.156
 
-static int ite;
-
 int readint(const char *prompt)
 {
   char buffer[32];
