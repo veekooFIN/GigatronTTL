@@ -30,6 +30,8 @@
 #define CX -0.8
 #define CY 0.156
 
+static int ite;
+
 int readint(const char *prompt)
 {
   char buffer[32];
@@ -38,7 +40,7 @@ int readint(const char *prompt)
   return atoi(buffer);
 }
   
-int mandelbrot(float x, float y, int ITE) {
+int mandelbrot(float x, float y) {
  float zz;
  float a;
  float b;
@@ -50,7 +52,7 @@ int mandelbrot(float x, float y, int ITE) {
   a = 0;
   b = 0;  
   i = 0;
-  while (i < ITE)
+  while (i < ite)
   {
     a2 = a * a;
     b2 = b * b;
@@ -65,7 +67,7 @@ int mandelbrot(float x, float y, int ITE) {
   return i;
 }
 
-int julia(float x, float y, int ITE) {
+int julia(float x, float y) {
  float zz;
  float a;
  float b;
@@ -77,7 +79,7 @@ int julia(float x, float y, int ITE) {
   a = x;
   b = y;  
   i = 0;
-  while (i < ITE)
+  while (i < ite)
   {
     a2 = a * a;
     b2 = b * b;
@@ -92,7 +94,7 @@ int julia(float x, float y, int ITE) {
   return i;
 }
 
-int burnship(float x, float y, int ITE) {
+int burnship(float x, float y) {
  float zz;
  float a;
  float b;
@@ -104,7 +106,7 @@ int burnship(float x, float y, int ITE) {
   a = 0;
   b = 0;  
   i = 0;
-  while (i < ITE)
+  while (i < ite)
   {
     a2 = a * a;
     b2 = b * b;
@@ -125,7 +127,7 @@ void drawPixel(int x, int y, int color)
 }
 
 void main(void) {
-  int par, IT;
+  int par;
   int x, y, data;
   int col;
   float realmin, imagmin, realmax, imagmax;
@@ -141,7 +143,7 @@ void main(void) {
   par=readint("Choose Fractal #1-4:");
   WIDTH=readint("Screen Size X #20-160:");
   HEIGHT=readint("Screen Size Y #15-120:");
-  IT=readint("Iteration Count #7-63:");
+  ite=readint("Iteration Count #7-63:");
   
   SYS_SetMode(3);
  
@@ -197,8 +199,8 @@ void main(void) {
   for(x = 0; x < WIDTH; x++ ) {
     imag0 = imagmax;
     for(y = 0; y < HEIGHT; y++ ) {
-      data = mandelbrot(real0, imag0, IT);
-      col = IT - data;
+      data = mandelbrot(real0, imag0);
+      col = ite - data;
       drawPixel(x,y,col);
       imag0 -= deltaimag;
     }
@@ -210,8 +212,8 @@ void main(void) {
   for(x = 0; x < WIDTH; x++ ) {
     imag0 = imagmax;
     for(y = 0; y < HEIGHT; y++ ) {
-      data = julia(real0, imag0, IT);
-      col = IT - data;
+      data = julia(real0, imag0);
+      col = ite - data;
       drawPixel(x,y,col);
       imag0 -= deltaimag;
     }
@@ -223,8 +225,8 @@ void main(void) {
   for(x = 0; x < WIDTH; x++ ) {
     imag0 = imagmin;
     for(y = 0; y < HEIGHT; y++ ) {
-      data = burnship(real0, imag0, IT);
-      col = IT - data;
+      data = burnship(real0, imag0);
+      col = ite - data;
       drawPixel(x,y,col);
       imag0 += deltaimag;
     }
@@ -236,8 +238,8 @@ void main(void) {
   for(x = 0; x < WIDTH; x++ ) {
     imag0 = imagmin;
     for(y = 0; y < HEIGHT; y++ ) {
-      data = burnship(real0, imag0, IT);
-      col = IT - data;
+      data = burnship(real0, imag0);
+      col = ite - data;
       drawPixel(x,y,col);
       imag0 += deltaimag;
     }
@@ -249,8 +251,8 @@ void main(void) {
   for(x = 0; x < WIDTH; x++ ) {
     imag0 = imagmax;
     for(y = 0; y < HEIGHT; y++ ) {
-      data = mandelbrot(real0, imag0, IT);
-      col = IT - data;
+      data = mandelbrot(real0, imag0);
+      col = ite - data;
       drawPixel(x,y,col);
       imag0 -= deltaimag;
     }
