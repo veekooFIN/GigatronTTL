@@ -21,8 +21,8 @@
  |                                                                      |
  +----------------------------------------------------------------------*/
  
-#include <stdlib.h>
 #include <string.h>
+#include <stdlib.h>
 #include <math.h>
 #include <gigatron/sys.h>
 #include <gigatron/console.h>

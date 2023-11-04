@@ -22,15 +22,10 @@
  +----------------------------------------------------------------------*/
  
 // Standard includes
-#include <limits.h>
-#include <stdarg.h>
-#include <stdio.h>
 #include <stdlib.h>
-#include <assert.h>
-#include <string.h>
-#include <math.h>
-#include <gigatron/sys.h>
+#include <stdint.h>
 #include <time.h>
+#include <gigatron/sys.h>
 
 #define HEIGHT 120
 #define WIDTH 160
