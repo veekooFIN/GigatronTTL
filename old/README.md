@@ -3,17 +3,10 @@ Hobby code development for Gigatron TTL microcomputer - Fractals
 
 
 ---------------------------------------------------------------------------------------------------------------
-Gfx mandelbrot fractal set for Gigatron TTL
 
-Gfx julia fractal set for Gigatron TTL
+All in one fractal program fpfract2. It uses floating point math to more zoom in and precise math.
 
-Std versions use 16 iterations and nice color palette.
-
-X / extended versions use 64 iterations and pseudeo color palette.
-
-Ascii mandelbrot fractal set for Gigatron TTL
-
-Ascii julia fractal set for Gigatron TTL
+There is also ascii fractals for fast test and random dot fractals.
 
 ---------------------------------------------------------------------------------------------------------------
 
