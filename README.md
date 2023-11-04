@@ -2,6 +2,15 @@
 Hobby code development for Gigatron TTL in C language - Fractals
    
 ---------------------------------------------------------------------------------------------------------------
+
+All in one fractal programs intfract and longfract. Both use integer math. Intfract uses 5-bit/integer and longfract uses 13-bit math/long integer
+
+src=integer fractals
+
+old=floating point fractals
+
+---------------------------------------------------------------------------------------------------------------
+
 Long Mandelbrot fractal set for Gigatron TTL
 
 Long Julia fractal set for Gigatron TTL
@@ -30,11 +39,4 @@ Long Burning Ship zoomed uses long integer and takes 1 hour to draw the screen
 
 ---------------------------------------------------------------------------------------------------------------
 Some tips in devenv101.txt
-
-All in one fractal programs intfract and longfract. Both use integer math. Intfract uses 5-bit/integer and longfract uses 13-bit math/long integer
-
-src=integer fractals
-
-old=floating point fractals
-
 
