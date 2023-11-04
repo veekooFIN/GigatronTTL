@@ -44,7 +44,7 @@ int mandelbrot(long real0, long imag0) {
 
   real = real0;
   imag = imag0;
-  for (i = 0; i < 14; i++)
+  for (i = 0; i < 15; i++)
   {
     realq = (real * real) >> NORM_BITS;
     imagq = (imag * imag) >> NORM_BITS;
@@ -69,7 +69,7 @@ int julia(long real0, long imag0) {
 
   real = real0;
   imag = imag0;
-  for (i = 0; i < 14; i++)
+  for (i = 0; i < 15; i++)
   {
     realq = (real * real) >> NORM_BITS;
     imagq = (imag * imag) >> NORM_BITS;
@@ -89,7 +89,7 @@ int burnship(long real0, long imag0) {
 
   real = real0;
   imag = imag0;
-  for (i = 0; i < 14; i++)
+  for (i = 0; i < 15; i++)
   {
     realq = (real * real) >> NORM_BITS;
     imagq = (imag * imag) >> NORM_BITS;
@@ -128,97 +128,102 @@ void main(void) {
   
   SYS_SetMode(3);
  
-  switch(par){       
+switch(par){       
   case 1:    
   //mandelbrot
-  col[0] = 0x02;
-  col[1] = 0x03;
-  col[2] = 0x07;
-  col[3] = 0x0b;
-  col[4] = 0x0f;
-  col[5] = 0x0e;
-  col[6] = 0x0d;
-  col[7] = 0x0c;
-  col[8] = 0x3c;
-  col[9] = 0x38;
-  col[10] = 0x34;
-  col[11] = 0x30;
-  col[12] = 0x20;
-  col[13] = 0x10;
-  col[14] = 0x00;   
+  col[0] = 0x01;
+  col[1] = 0x02;
+  col[2] = 0x03;
+  col[3] = 0x07;
+  col[4] = 0x0b;
+  col[5] = 0x0f;
+  col[6] = 0x0e;
+  col[7] = 0x0d;
+  col[8] = 0x0c;
+  col[9] = 0x3c;
+  col[10] = 0x38;
+  col[11] = 0x34;
+  col[12] = 0x30;
+  col[13] = 0x20;
+  col[14] = 0x10;
+  col[15] = 0x00;  
   break;
   case 2:    
   //burnship+julia 
-  col[13] = 0x01;
-  col[12] = 0x02;
-  col[11] = 0x03;
-  col[10] = 0x07;
-  col[9] = 0x0b;
-  col[8] = 0x0f;
-  col[7] = 0x0e;
-  col[6] = 0x0d;
-  col[5] = 0x0c;
-  col[4] = 0x3c;
-  col[3] = 0x38;
-  col[2] = 0x34;
-  col[1] = 0x30;
-  col[0] = 0x20;
-  col[14] = 0x00;  
+  col[14] = 0x01;
+  col[13] = 0x02;
+  col[12] = 0x03;
+  col[11] = 0x07;
+  col[10] = 0x0b;
+  col[9] = 0x0f;
+  col[8] = 0x0e;
+  col[7] = 0x0d;
+  col[6] = 0x0c;
+  col[5] = 0x3c;
+  col[4] = 0x38;
+  col[3] = 0x34;
+  col[2] = 0x30;
+  col[1] = 0x20;
+  col[0] = 0x10;
+  col[15] = 0x00; 
   break;
   case 3:    
   //burnship+julia 
-  col[13] = 0x01;
-  col[12] = 0x02;
-  col[11] = 0x03;
-  col[10] = 0x07;
-  col[9] = 0x0b;
-  col[8] = 0x0f;
-  col[7] = 0x0e;
-  col[6] = 0x0d;
-  col[5] = 0x0c;
-  col[4] = 0x3c;
-  col[3] = 0x38;
-  col[2] = 0x34;
-  col[1] = 0x30;
-  col[0] = 0x20;
-  col[14] = 0x00;  
+  col[14] = 0x01;
+  col[13] = 0x02;
+  col[12] = 0x03;
+  col[11] = 0x07;
+  col[10] = 0x0b;
+  col[9] = 0x0f;
+  col[8] = 0x0e;
+  col[7] = 0x0d;
+  col[6] = 0x0c;
+  col[5] = 0x3c;
+  col[4] = 0x38;
+  col[3] = 0x34;
+  col[2] = 0x30;
+  col[1] = 0x20;
+  col[0] = 0x10;
+  col[15] = 0x00; 
   break;    
   case 4:    
   //burnship+julia 
-  col[13] = 0x01;
-  col[12] = 0x02;
-  col[11] = 0x03;
-  col[10] = 0x07;
-  col[9] = 0x0b;
-  col[8] = 0x0f;
-  col[7] = 0x0e;
-  col[6] = 0x0d;
-  col[5] = 0x0c;
-  col[4] = 0x3c;
-  col[3] = 0x38;
-  col[2] = 0x34;
-  col[1] = 0x30;
-  col[0] = 0x20;
-  col[14] = 0x00;    
+  col[14] = 0x01;
+  col[13] = 0x02;
+  col[12] = 0x03;
+  col[11] = 0x07;
+  col[10] = 0x0b;
+  col[9] = 0x0f;
+  col[8] = 0x0e;
+  col[7] = 0x0d;
+  col[6] = 0x0c;
+  col[5] = 0x3c;
+  col[4] = 0x38;
+  col[3] = 0x34;
+  col[2] = 0x30;
+  col[1] = 0x20;
+  col[0] = 0x10;
+  col[15] = 0x00;    
   break; 
   default:    
   //mandelbrot
-  col[0] = 0x02;
-  col[1] = 0x03;
-  col[2] = 0x07;
-  col[3] = 0x0b;
-  col[4] = 0x0f;
-  col[5] = 0x0e;
-  col[6] = 0x0d;
-  col[7] = 0x0c;
-  col[8] = 0x3c;
-  col[9] = 0x38;
-  col[10] = 0x34;
-  col[11] = 0x30;
-  col[12] = 0x20;
-  col[13] = 0x10;
-  col[14] = 0x00;     
-  } 
+  col[0] = 0x01;
+  col[1] = 0x02;
+  col[2] = 0x03;
+  col[3] = 0x07;
+  col[4] = 0x0b;
+  col[5] = 0x0f;
+  col[6] = 0x0e;
+  col[7] = 0x0d;
+  col[8] = 0x0c;
+  col[9] = 0x3c;
+  col[10] = 0x38;
+  col[11] = 0x34;
+  col[12] = 0x30;
+  col[13] = 0x20;
+  col[14] = 0x10;
+  col[15] = 0x00;    
+  }
 
   switch(par){       
   case 1:    
