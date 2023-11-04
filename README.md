@@ -31,7 +31,9 @@ Long Burning Ship zoomed uses long integer and takes 1 hour to draw the screen
 ---------------------------------------------------------------------------------------------------------------
 Some tips in devenv101.txt
 
-src=long integer fractals
+All in one fractal programs intfract and longfract. Both use integer math. Intfract uses 5-bit/integer and longfract uses 13-bit math/long integer
+
+src=integer fractals
 
 old=floating point fractals
 
