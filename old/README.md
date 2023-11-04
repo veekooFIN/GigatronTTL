@@ -4,9 +4,9 @@ Hobby code development for Gigatron TTL microcomputer - Fractals
 
 ---------------------------------------------------------------------------------------------------------------
 
-All in one fractal program fpfract2 uses floating point math to more zoom in and precise math.
+All in one fractal programs fpfract2 and ascfract use floating point math.
 
-There is also ascii fractals for fast test and random dot fractals.
+Ascii fractals for fast test and random dot fractals.
 
 ---------------------------------------------------------------------------------------------------------------
 
