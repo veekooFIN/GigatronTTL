@@ -264,7 +264,7 @@ switch(par){
      
   for(y = 0; y < HEIGHT; y++ ) {
     for(x = 0; x < WIDTH; x++ ) {
-      drawPixel(x,y,col[14]);
+      drawPixel(x,y,col[15]);
     }
   } 
   
