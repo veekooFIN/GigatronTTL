@@ -23,7 +23,6 @@
  
 // Standard includes
 #include <stdlib.h>
-#include <stdint.h>
 #include <time.h>
 #include <gigatron/sys.h>
 
