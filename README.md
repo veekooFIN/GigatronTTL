@@ -3,7 +3,7 @@ Hobby code development for Gigatron TTL in C language - Fractals
    
 ---------------------------------------------------------------------------------------------------------------
 
-All in one fractal programs intfract and longfract. Both use integer math. Intfract uses 5-bit/integer and longfract uses 13-bit math/long integer
+All in one fractal programs intfract and longfract. Both use integer math. Intfract uses 5-bit math/integer and longfract uses 13-bit math/long integer
 
 src=integer fractals
 
