@@ -4,7 +4,7 @@ Hobby code development for Gigatron TTL microcomputer - Fractals
 
 ---------------------------------------------------------------------------------------------------------------
 
-Most generic fractal code uses floating point math and is very accurate. For example this follows pretty much the code used in wikipedia. You can get big picture size and can zoom in a lot.
+Most generic fractal code uses floating point math and is very accurate. For example this follows pretty much the code used in wikipedia. You can get big picture size and can zoom in a lot. Only downside with floating point is the calculation speed is very slow.
 
 These all in one fractal programs fpfract2 and ascfract both use floating point math.
 
