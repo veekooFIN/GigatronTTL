@@ -1,5 +1,11 @@
 # GigatronTTL-Fractals
 Hobby code development for Gigatron TTL in C language - Fractals
+
+---------------------------------------------------------------------------------------------------------------
+
+Its all about fractals. Mandelbrot, Julia and Burning Ship. You get them in two formats. Intger or Floating Point.
+
+And there is more to choose from individual fractals or all in one programs. There are Ascii and Graphics fractals. They are drawn line by line or random dot.
    
 ---------------------------------------------------------------------------------------------------------------
 
