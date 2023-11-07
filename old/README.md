@@ -4,11 +4,13 @@ Hobby code development for Gigatron TTL microcomputer - Fractals
 
 ---------------------------------------------------------------------------------------------------------------
 
-Most generic fractal code uses floating point math and is very accurate. For example this follows pretty much the code used in wikipedia. You get big picture size and can zoom in a lot.
+Most generic fractal code uses floating point math and is very accurate. For example this follows pretty much the code used in wikipedia. You can get big picture size and can zoom in a lot.
 
-All in one fractal programs fpfract2 and ascfract use floating point math.
+These all in one fractal programs fpfract2 and ascfract both use floating point math.
 
-Ascii fractals for fast test and there is also random dot fractals.
+Ascii fractals for fast test and benchmarking. Fpfract is the same but with graphics.
+
+Other way to use fractals is to draw them with random dot. Kind of "screen saver".
 
 ---------------------------------------------------------------------------------------------------------------
 
