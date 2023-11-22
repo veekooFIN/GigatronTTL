@@ -27,8 +27,8 @@
 
 #define WIDTH 160
 #define HEIGHT 120
-#define NORM_BITS 13
-#define F 8192
+#define NORMBITS 13
+#define K 8192
 
 int burnship(long real0, long imag0) {
   long realq, imagq; 
@@ -39,12 +39,12 @@ int burnship(long real0, long imag0) {
   imag = imag0;
   for (i = 0; i < 15; i++)
   {
-    realq = (real * real) >> NORM_BITS;
-    imagq = (imag * imag) >> NORM_BITS;
+    realq = (real * real) >> NORMBITS;
+    imagq = (imag * imag) >> NORMBITS;
 
     if ((realq + imagq) > 32768) break;
 
-    imag = abs((real * imag) >> (NORM_BITS - 1)) + imag0;
+    imag = abs((real * imag) >> (NORMBITS - 1)) + imag0;
     real = realq - imagq + real0;
   }
   return i;
@@ -80,10 +80,10 @@ void main(void) {
   col[0] = 0x10;
   col[15] = 0x00;
   
-  realmin = (long) ((-1.8) * (float) F);
-  realmax = (long) ((-1.7) * (float) F);
-  imagmin = (long) ((-0.08) * (float) F);
-  imagmax = (long) ((0.01) * (float) F); 
+  realmin = (long) ((-1.8) * (float) K);
+  realmax = (long) ((-1.7) * (float) K);
+  imagmin = (long) ((-0.08) * (float) K);
+  imagmax = (long) ((0.01) * (float) K); 
    
   for(y = 0; y < HEIGHT; y++ ) {
     for(x = 0; x < WIDTH; x++ ) {

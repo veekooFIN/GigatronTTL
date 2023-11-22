@@ -26,8 +26,8 @@
 #include <gigatron/sys.h>
 #include <gigatron/console.h>
 
-#define NORM_BITS 13
-#define F 8192
+#define NORMBITS 13
+#define K 8192
 
 int readint(const char *prompt)
 {
@@ -46,12 +46,12 @@ int mandelbrot(long real0, long imag0) {
   imag = imag0;
   for (i = 0; i < 15; i++)
   {
-    realq = (real * real) >> NORM_BITS;
-    imagq = (imag * imag) >> NORM_BITS;
+    realq = (real * real) >> NORMBITS;
+    imagq = (imag * imag) >> NORMBITS;
 
     if ((realq + imagq) > 32768) break;
        
-    imag = ((real * imag) >> (NORM_BITS - 1)) + imag0;
+    imag = ((real * imag) >> (NORMBITS - 1)) + imag0;
     real = realq - imagq + real0; 
     }  
   return i;
@@ -64,19 +64,19 @@ int julia(long real0, long imag0) {
   long cx, cy; 
 
   //longjulia
-  cx = (long) ((-0.8) * (float) F);
-  cy = (long) ((0.156) * (float) F);
+  cx = (long) ((-0.8) * (float) K);
+  cy = (long) ((0.156) * (float) K);
 
   real = real0;
   imag = imag0;
   for (i = 0; i < 15; i++)
   {
-    realq = (real * real) >> NORM_BITS;
-    imagq = (imag * imag) >> NORM_BITS;
+    realq = (real * real) >> NORMBITS;
+    imagq = (imag * imag) >> NORMBITS;
 
     if ((realq + imagq) > 32768) break;
        
-    imag = ((real * imag) >> (NORM_BITS - 1)) + cy;
+    imag = ((real * imag) >> (NORMBITS - 1)) + cy;
     real = realq - imagq + cx;
   }
   return i;
@@ -91,12 +91,12 @@ int burnship(long real0, long imag0) {
   imag = imag0;
   for (i = 0; i < 15; i++)
   {
-    realq = (real * real) >> NORM_BITS;
-    imagq = (imag * imag) >> NORM_BITS;
+    realq = (real * real) >> NORMBITS;
+    imagq = (imag * imag) >> NORMBITS;
 
     if ((realq + imagq) > 32768) break;
     
-    imag = abs((real * imag) >> (NORM_BITS - 1)) + imag0;
+    imag = abs((real * imag) >> (NORMBITS - 1)) + imag0;
     real = realq - imagq + real0; 
   }
   return i;
@@ -228,38 +228,38 @@ switch(par){
   switch(par){       
   case 1:    
   //mandelbrot
-  realmin = (long) ((-2.0) * (float) F);
-  realmax = (long) ((0.7) * (float) F);
-  imagmin = (long) ((-1.2) * (float) F);
-  imagmax = (long) ((1.2) * (float) F);    
+  realmin = (long) ((-2.0) * (float) K);
+  realmax = (long) ((0.7) * (float) K);
+  imagmin = (long) ((-1.2) * (float) K);
+  imagmax = (long) ((1.2) * (float) K);    
   break;
   case 2:    
   //julia
-  realmin = (long) ((-2.0) * (float) F);
-  realmax = (long) ((2.0) * (float) F);
-  imagmin = (long) ((-1.2) * (float) F);
-  imagmax = (long) ((1.2) * (float) F);    
+  realmin = (long) ((-2.0) * (float) K);
+  realmax = (long) ((2.0) * (float) K);
+  imagmin = (long) ((-1.2) * (float) K);
+  imagmax = (long) ((1.2) * (float) K);    
   break;
   case 3:    
   //burnship
-  realmin = (long) ((-2.1) * (float) F);
-  realmax = (long) ((1.3) * (float) F);
-  imagmin = (long) ((-1.9) * (float) F);
-  imagmax = (long) ((0.7) * (float) F);   
+  realmin = (long) ((-2.1) * (float) K);
+  realmax = (long) ((1.3) * (float) K);
+  imagmin = (long) ((-1.9) * (float) K);
+  imagmax = (long) ((0.7) * (float) K);   
   break;    
   case 4:    
   //burnshipX
-  realmin = (long) ((-1.8) * (float) F);
-  realmax = (long) ((-1.7) * (float) F);
-  imagmin = (long) ((-0.08) * (float) F);
-  imagmax = (long) ((0.01) * (float) F);    
+  realmin = (long) ((-1.8) * (float) K);
+  realmax = (long) ((-1.7) * (float) K);
+  imagmin = (long) ((-0.08) * (float) K);
+  imagmax = (long) ((0.01) * (float) K);    
   break; 
   default:    
   //mandelbrot
-  realmin = (long) ((-2.0) * (float) F);
-  realmax = (long) ((0.7) * (float) F);
-  imagmin = (long) ((-1.2) * (float) F);
-  imagmax = (long) ((1.2) * (float) F);    
+  realmin = (long) ((-2.0) * (float) K);
+  realmax = (long) ((0.7) * (float) K);
+  imagmin = (long) ((-1.2) * (float) K);
+  imagmax = (long) ((1.2) * (float) K);    
   }     
      
   for(y = 0; y < HEIGHT; y++ ) {
