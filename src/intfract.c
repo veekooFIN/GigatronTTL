@@ -28,6 +28,11 @@
 
 #define NORMBITS 5
 #define K 32
+#define JCX -0.8
+#define JCY 0.156
+
+static int cx;
+static int cy;
 
 int readint(const char *prompt)
 {
@@ -61,12 +66,7 @@ int julia(int real0, int imag0) {
   int realq, imagq; 
   int real, imag;
   int i;
-  int cx, cy; 
-
-  //intjulia
-  cx = (int) ((-0.8) * (float) K);
-  cy = (int) ((0.156) * (float) K);
-
+  
   real = real0;
   imag = imag0;
   for (i = 0; i < 15; i++)
@@ -235,6 +235,8 @@ void main(void) {
   break;
   case 2:    
   //julia
+  cx = (int) ((JCX) * (float) K);
+  cy = (int) ((JCY) * (float) K);
   realmin = (int) ((-2.0) * (float) K);
   realmax = (int) ((2.0) * (float) K);
   imagmin = (int) ((-1.2) * (float) K);
