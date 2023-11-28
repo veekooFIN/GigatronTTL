@@ -27,13 +27,13 @@ Runtime pictures added.
 
 ---------------------------------------------------------------------------------------------------------------
 
-Long Mandelbrot uses long integer and takes 45 minutes to draw the screen.
+Long Mandelbrot uses long integer and takes 43 minutes to draw the screen. With latest compiler 30 minutes.
 
-Long Julia uses long integer and takes 35 minutes to draw the screen.
+Long Julia uses long integer and takes 32 minutes to draw the screen. With latest compiler 22 minutes.
 
-Long Burning Ship uses long integer and takes 40 minutes to draw the screen
+Long Burning Ship uses long integer and takes 37 minutes to draw the screen. With latest compiler 25 minutes.
 
-Long Burning Ship zoomed uses long integer and takes 1 hour to draw the screen
+Long Burning Ship zoomed uses long integer and takes 1 hour to draw the screen. With latest compiler 47 minutes.
 
 ---------------------------------------------------------------------------------------------------------------
 Some tips in devenv101.txt
