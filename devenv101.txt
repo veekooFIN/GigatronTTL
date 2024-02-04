@@ -17,9 +17,9 @@ PATH=$PATH:/usr/local/m4/bin/
 make
 sudo make install
 ---------------------------
-wget http://ftp.gnu.org/gnu/make/make-4.3.tar.gz
-tar -xvzf make-4.3.tar.gz
-cd make-4.3
+wget http://ftp.gnu.org/gnu/make/make-4.4.1.tar.gz
+tar -xvzf make-4.4.1.tar.gz
+cd make-4.4.1
 ./configure
 make
 sudo make install
@@ -29,10 +29,10 @@ sudo apt install build-essential zlib1g-dev \
 libncurses5-dev libgdbm-dev libnss3-dev \
 libssl-dev libreadline-dev libffi-dev curl
 
-https://www.python.org/downloads/release/python-3812/
+https://www.python.org/downloads/release/python-3818/
 
-tar -xf Python-3.8.12.tar.xz
-cd Python-3.8.12
+tar -xf Python-3.8.18.tar.xz
+cd Python-3.8.18
 ./configure
 make
 sudo make install
