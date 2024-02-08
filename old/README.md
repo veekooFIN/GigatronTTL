@@ -28,19 +28,23 @@ C language code developed for Gigatron TTL microcomputer.
 
 ---------------------------------------------------------------------------------------------------------------
 
-Gfx mandelbrot uses floating point and takes 2 hours 5 minutes to draw the screen. With latest compiler might be even faster.
+Gfx mandelbrot (16 iterations) uses floating point and takes 2 hours 5 minutes to draw the screen. With latest compiler might be even faster.
 
-Gfx julia uses floating point and takes 1 hour 50 minutes to draw the screen. With latest compiler might be even faster.
+Gfx julia uses (16 iterations) floating point and takes 1 hour 50 minutes to draw the screen. With latest compiler might be even faster.
 
-Extended version of gfx mandelbrot uses floating point and takes 4,5 hours to draw the screen. With latest compiler might be even faster.
 
-Extended version of gfx julia uses floating point and takes 3 hours to draw the screen. With latest compiler might be even faster.
 
-Ascii mandelbrot uses floating point and takes 3 minutes to draw the screen. With latest compiler 1 min 38 sec.
+Extended version of gfx mandelbrot (64 iterations) uses floating point and takes 4,5 hours to draw the screen. With latest compiler might be even faster.
 
-Ascii julia uses floating point and takes 3 minutes to draw the screen. With latest compiler 1 min 35 sec.
+Extended version of gfx julia uses (64 iterations) floating point and takes 3 hours to draw the screen. With latest compiler might be even faster.
 
-Ascii burning ship uses floating point and takes x minutes to draw the screen. With latest compiler 1 min 35 sec.
+
+
+Ascii mandelbrot (10 iterations) uses floating point and takes 3 minutes to draw the screen. With latest compiler 1 min 38 sec.
+
+Ascii julia (10 iterations) uses floating point and takes 3 minutes to draw the screen. With latest compiler 1 min 35 sec.
+
+Ascii burning ship (10 iterations) uses floating point and takes x minutes to draw the screen. With latest compiler 1 min 35 sec.
 
 ---------------------------------------------------------------------------------------------------------------
 Some tips in devenv101.txt
