@@ -36,9 +36,11 @@ Extended version of gfx mandelbrot uses floating point and takes 4,5 hours to dr
 
 Extended version of gfx julia uses floating point and takes 3 hours to draw the screen. With latest compiler might be even faster.
 
-Ascii mandelbrot uses floating point and takes 3 minutes to draw the screen. With latest compiler might be even faster.
+Ascii mandelbrot uses floating point and takes 3 minutes to draw the screen. With latest compiler 1 min 38 sec.
 
-Ascii julia uses floating point and takes 3 minutes to draw the screen. With latest compiler might be even faster.
+Ascii julia uses floating point and takes 3 minutes to draw the screen. With latest compiler 1 min 35 sec.
+
+Ascii burning ship uses floating point and takes x minutes to draw the screen. With latest compiler 1 min 35 sec.
 
 ---------------------------------------------------------------------------------------------------------------
 Some tips in devenv101.txt
