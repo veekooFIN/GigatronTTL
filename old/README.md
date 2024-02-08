@@ -32,13 +32,13 @@ Gfx mandelbrot (16 iterations) uses floating point and takes 2 hours 5 minutes t
 
 Gfx julia uses (16 iterations) floating point and takes 1 hour 50 minutes to draw the screen. With latest compiler might be even faster.
 
-
+--
 
 Extended version of gfx mandelbrot (64 iterations) uses floating point and takes 4,5 hours to draw the screen. With latest compiler might be even faster.
 
 Extended version of gfx julia uses (64 iterations) floating point and takes 3 hours to draw the screen. With latest compiler might be even faster.
 
-
+--
 
 Ascii mandelbrot (10 iterations) uses floating point and takes 3 minutes to draw the screen. With latest compiler 1 min 38 sec.
 
