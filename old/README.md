@@ -28,17 +28,17 @@ C language code developed for Gigatron TTL microcomputer.
 
 ---------------------------------------------------------------------------------------------------------------
 
-Gfx mandelbrot uses floating point and takes 2 hours 5 minutes to draw the screen.
+Gfx mandelbrot uses floating point and takes 2 hours 5 minutes to draw the screen. With latest compiler might be even faster.
 
-Gfx julia uses floating point and takes 1 hour 50 minutes to draw the screen.
+Gfx julia uses floating point and takes 1 hour 50 minutes to draw the screen. With latest compiler might be even faster.
 
-Extended version of gfx mandelbrot uses floating point and takes 4,5 hours to draw the screen.
+Extended version of gfx mandelbrot uses floating point and takes 4,5 hours to draw the screen. With latest compiler might be even faster.
 
-Extended version of gfx julia uses floating point and takes 3 hours to draw the screen.
+Extended version of gfx julia uses floating point and takes 3 hours to draw the screen. With latest compiler might be even faster.
 
-Ascii mandelbrot uses floating point and takes 3 minutes to draw the screen.
+Ascii mandelbrot uses floating point and takes 3 minutes to draw the screen. With latest compiler might be even faster.
 
-Ascii julia uses floating point and takes 3 minutes to draw the screen.
+Ascii julia uses floating point and takes 3 minutes to draw the screen. With latest compiler might be even faster.
 
 ---------------------------------------------------------------------------------------------------------------
 Some tips in devenv101.txt
