@@ -44,7 +44,7 @@ Ascii mandelbrot (11 iterations) uses floating point and takes 2 min 1 sec to dr
 
 Ascii julia (11 iterations) uses floating point and takes 1 min 55 sec to draw the screen. With latest compiler 1 min 35 sec.
 
-Ascii burning ship (11 iterations) uses floating point and takes x minutes to draw the screen. With latest compiler 1 min 35 sec.
+Ascii burning ship (11 iterations) uses floating point and takes 1 min 44 sec to draw the screen. With latest compiler 1 min 35 sec.
 
 ---------------------------------------------------------------------------------------------------------------
 Some tips in devenv101.txt
