@@ -157,7 +157,7 @@ void main(void) {
   case 3:
   for(y = 0; y < HEIGHT; y = y + YSTEP ) {
     for(x = 0; x < WIDTH; x = x + XSTEP ) {
-      sx = (BSCALE * (WIDTH/2.0 - x) / (WIDTH/2.0))*(-1);
+      sx = -0.25 + (BSCALE * (WIDTH/2.0 - x) / (WIDTH/2.0))*(-1);
       sy = -0.5 + (BSCALE * (HEIGHT/2.0 - y) / (HEIGHT/2.0))*(-0.75);
       data = burningship(sx, sy);
       gotoxy(x+1, y+1);
