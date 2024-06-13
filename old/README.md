@@ -48,7 +48,7 @@ Ascii burning ship (11 iterations) uses floating point and takes 1 min 44 sec to
 
 ---------------------------------------------------------------------------------------------------------------
 
-Benchmarked with "All in one"-programs
+Benchmarked with "All in one"-programs: fpfract2, ascfract2
 
 ---------------------------------------------------------------------------------------------------------------
 
