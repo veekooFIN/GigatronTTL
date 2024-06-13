@@ -13,7 +13,7 @@ Most generic fractal code uses floating point math and is very accurate. For exa
 
 These all in one fractal programs fpfract2, ascfract2 and rndfract use floating point math.
 
-Ascii fractals for fast test and benchmarking. Fpfract is the same but with graphics.
+Ascii fractals for fast test and benchmarking. Fpfract2 is the same but with graphics.
 
 Other way to use fractals is to draw them with random dot.
 
