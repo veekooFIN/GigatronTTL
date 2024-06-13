@@ -11,7 +11,7 @@ And there is more to choose from individual fractals or all in one programs. The
 
 Most generic fractal code uses floating point math and is very accurate. For example this follows pretty much the code used in wikipedia. You can get big picture size and can zoom in a lot. Only downside with floating point is the calculation speed is very slow.
 
-These all in one fractal programs fpfract2, ascfract and rndfract use floating point math.
+These all in one fractal programs fpfract2, ascfract2 and rndfract use floating point math.
 
 Ascii fractals for fast test and benchmarking. Fpfract is the same but with graphics.
 
