@@ -30,7 +30,7 @@ C language code developed for Gigatron TTL microcomputer.
 
 Gfx mandelbrot (16 iterations) uses floating point and takes 2 hours 5 minutes to draw the screen. With latest compiler 1 hour 31 minutes.
 
-Gfx julia uses (16 iterations) floating point and takes 1 hour 50 minutes to draw the screen. With latest compiler might be even faster.
+Gfx julia uses (16 iterations) floating point and takes 1 hour 50 minutes to draw the screen. With latest compiler 1 hour 29 minutes.
 
 --
 
