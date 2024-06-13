@@ -36,5 +36,10 @@ Long Burning Ship uses long integer and takes 37 minutes to draw the screen. Wit
 Long Burning Ship zoomed uses long integer and takes 1 hour to draw the screen. With latest compiler 47 minutes.
 
 ---------------------------------------------------------------------------------------------------------------
+
+Benchmarked with "All in one"-programs
+
+---------------------------------------------------------------------------------------------------------------
+
 Some tips in devenv101.txt
 
