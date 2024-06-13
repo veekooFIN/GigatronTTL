@@ -36,7 +36,7 @@ Long Burning Ship zoomed uses long integer and takes 1 hour to draw the screen. 
 
 ---------------------------------------------------------------------------------------------------------------
 
-Benchmarked with "All in one"-programs
+Benchmarked with "All in one"-programs: longfract
 
 ---------------------------------------------------------------------------------------------------------------
 
