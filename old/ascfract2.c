@@ -118,7 +118,7 @@ int burningship(float x, float y) {
 }
 
 void main(void) {
-  int x, y, data, par;
+  int x, y, data, par, ct;
   float sx, sy;
  
   cprintf("Ascii Fractals:\n");
@@ -126,6 +126,7 @@ void main(void) {
   cprintf("#2 Julia\n");
   cprintf("#3 Burning Ship\n"); 
   par=readint("Choose Fractal #1-3:");
+  ct=readint("Color text 0/1:");
   
   SYS_SetMode(3);
   
@@ -137,7 +138,7 @@ void main(void) {
       sy = (MSCALE * (HEIGHT/2.0 - y) / (HEIGHT/2.0))*(-0.75);
       data = mandelbrot(sx, sy);
       gotoxy(x+1, y+1);
-      textcolor(((data-48)*6+1) & 0x3f);
+      if(ct==1) textcolor(((data-48)*6+1) & 0x3f);
       putch(data);
     }
   }
@@ -149,7 +150,7 @@ void main(void) {
       sy = (JSCALE * (HEIGHT/2.0 - y) / (HEIGHT/2.0))*(-0.75);
       data = julia(sx, sy);
       gotoxy(x+1, y+1);
-      textcolor(((data-48)*6+1) & 0x3f);
+      if(ct==1) textcolor(((data-48)*6+1) & 0x3f);
       putch(data);
     }
   }
@@ -161,7 +162,7 @@ void main(void) {
       sy = -0.5 + (BSCALE * (HEIGHT/2.0 - y) / (HEIGHT/2.0))*(-0.75);
       data = burningship(sx, sy);
       gotoxy(x+1, y+1);
-      textcolor(((data-48)*6+1) & 0x3f);
+      if(ct==1) textcolor(((data-48)*6+1) & 0x3f);
       putch(data);
     }
   }
@@ -173,7 +174,7 @@ void main(void) {
       sy = (MSCALE * (HEIGHT/2.0 - y) / (HEIGHT/2.0))*(-0.75);
       data = mandelbrot(sx, sy);
       gotoxy(x+1, y+1);
-      textcolor(((data-48)*6+1) & 0x3f);
+      if(ct==1) textcolor(((data-48)*6+1) & 0x3f);
       putch(data);
     }
   }
