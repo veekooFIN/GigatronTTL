@@ -28,23 +28,23 @@ C language code developed for Gigatron TTL microcomputer.
 
 ---------------------------------------------------------------------------------------------------------------
 
-Gfx mandelbrot (16 iterations) uses floating point and takes 2 hours 5 minutes to draw the screen. With latest compiler 1 hour 31 minutes.
+Gfx mandelbrot (16 iterations) uses floating point and takes 2 hours 5 minutes to draw the screen. With latest compiler 1 hour 31 minutes. 27% faster.
 
-Gfx julia uses (16 iterations) floating point and takes 1 hour 50 minutes to draw the screen. With latest compiler 1 hour 8 minutes.
-
---
-
-Extended version of gfx mandelbrot (64 iterations) uses floating point and takes 4,5 hours to draw the screen. With latest compiler 4 hours 12 minutes.
-
-Extended version of gfx julia uses (64 iterations) floating point and takes 3 hours to draw the screen. With latest compiler 2 hours 34 minutes.
+Gfx julia uses (16 iterations) floating point and takes 1 hour 50 minutes to draw the screen. With latest compiler 1 hour 8 minutes. 38% faster.
 
 --
 
-Ascii mandelbrot (11 iterations) uses floating point and takes 2 min 1 sec to draw the screen. With latest compiler 1 min 38 sec.
+Extended version of gfx mandelbrot (64 iterations) uses floating point and takes 4,5 hours to draw the screen. With latest compiler 4 hours 12 minutes. 7% faster.
 
-Ascii julia (11 iterations) uses floating point and takes 1 min 55 sec to draw the screen. With latest compiler 1 min 35 sec.
+Extended version of gfx julia uses (64 iterations) floating point and takes 3 hours to draw the screen. With latest compiler 2 hours 34 minutes. 14% faster.
 
-Ascii burning ship (11 iterations) uses floating point and takes 1 min 44 sec to draw the screen. With latest compiler 1 min 35 sec.
+--
+
+Ascii mandelbrot (11 iterations) uses floating point and takes 2 min 1 sec to draw the screen. With latest compiler 1 min 38 sec. 19% faster.
+
+Ascii julia (11 iterations) uses floating point and takes 1 min 55 sec to draw the screen. With latest compiler 1 min 35 sec. 17% faster.
+
+Ascii burning ship (11 iterations) uses floating point and takes 1 min 44 sec to draw the screen. With latest compiler 1 min 35 sec. 9% faster.
 
 ---------------------------------------------------------------------------------------------------------------
 
