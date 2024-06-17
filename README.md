@@ -26,13 +26,13 @@ C language code developed for Gigatron TTL microcomputer.
 
 ---------------------------------------------------------------------------------------------------------------
 
-Long Mandelbrot uses long integer and takes 43 minutes to draw the screen. With latest compiler 30 minutes.
+Long Mandelbrot uses long integer and takes 43 minutes to draw the screen. With latest compiler 30 minutes. 30% faster.
 
-Long Julia uses long integer and takes 32 minutes to draw the screen. With latest compiler 22 minutes.
+Long Julia uses long integer and takes 32 minutes to draw the screen. With latest compiler 22 minutes. 31% faster.
 
-Long Burning Ship uses long integer and takes 37 minutes to draw the screen. With latest compiler 25 minutes.
+Long Burning Ship uses long integer and takes 37 minutes to draw the screen. With latest compiler 25 minutes. 32% faster.
 
-Long Burning Ship zoomed uses long integer and takes 1 hour to draw the screen. With latest compiler 47 minutes.
+Long Burning Ship zoomed uses long integer and takes 1 hour to draw the screen. With latest compiler 47 minutes. 22% faster.
 
 ---------------------------------------------------------------------------------------------------------------
 
